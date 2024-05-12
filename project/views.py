@@ -11,3 +11,9 @@ def projects(request):
         'myprojects':myProjcets
     }
     return render(request, 'project/projects.html', context)
+
+def contact(request):
+    return render(request, 'project/contact.html')
+
+def blog(request):
+    return render(request, 'project/index.html')

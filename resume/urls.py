@@ -23,7 +23,10 @@ from project import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('projects', views.projects, name='projects')
+    path('projects', views.projects, name='projects'),
+    path('contact',views.contact, name='contacts'),
+    path('blog',views.blog, name='blog')
+    
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
